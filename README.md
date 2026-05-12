@@ -10,3 +10,7 @@ b. What does it mean? guest:guest@localhost:5672 , what is the first guest, and 
 ### Simulation slow subscriber
 ![alt text](image.png)
 Gambar tersebut menunjukkan sistem antrean RabbitMQ yang sedang berjalan stabil, di mana pesan-pesan dari publisher  diproses oleh satu subscriber yang aktif hingga jumlah pesan di queue kembali ke angka nol. Jumlah queue ada sebanya 2 dan ini mencerminkan konfigurasi spesifik dari skrip yang telah dibuat lokal. Selain itu, menunjukkan bahwa sistem hanya menjalankan infrastruktur yang diperlukan untuk beban kerja saat ini.
+
+### Reflection and Running at least three subscribers
+![alt text](image2.png)
+Penurunan tajam pada grafik memberi tahu bahwa subscriber kini memroses data jauh lebih cepat dibanding sebelumnya sehingga antrean yang menumpuk dapat diselesaikan hampir instan.
